@@ -4,7 +4,7 @@ import { Controller, Get, Post } from '@nestjs/common';
 export class MessagesController {
   @Get()
   listMessages() {
-
+    return 'hello';
   }
 
   @Post()
@@ -14,6 +14,6 @@ export class MessagesController {
 
   @Get('/:id')
   getMessage() {
-
+    return 'hello this is the specific message';
   }
 }
