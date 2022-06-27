@@ -1,11 +1,15 @@
 import { MessagesRepository } from './messages.repository';
 
 export class MessagesService {
-  messagesRepo: MessagesRepository;
+  // messagesRepo: MessagesRepository;
 
-  constructor(messagesRepo: MessagesRepository) {
-    this.messagesRepo = messagesRepo;
-  }
+  // constructor(messagesRepo: MessagesRepository) {
+  //   this.messagesRepo = messagesRepo;
+  // }
+
+  // an equivalent to the lines above is
+
+  constructor(public messagesRepo: MessagesRepository) {}
 
   findOne(id: string) {
     return this.messagesRepo.findOne(id);
