@@ -1,5 +1,8 @@
+import { Injectable } from '@nestjs/common';
 import { MessagesRepository } from './messages.repository';
 
+// mark the class for registration into tje nest DI container
+@Injectable()
 export class MessagesService {
   // messagesRepo: MessagesRepository;
 
