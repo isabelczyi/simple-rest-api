@@ -6,10 +6,10 @@ POST http://localhost:3000/messages
 content-type: application/json
 
 {
-  "content": "hello"
+  "content": "new message"
 }
 
 ### View a specific message
-GET http://localhost:3000/messages/2
+GET http://localhost:3000/messages/10
 
 // need empty JSON object if not json parse won't work
