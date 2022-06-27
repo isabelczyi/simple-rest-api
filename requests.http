@@ -10,4 +10,6 @@ content-type: application/json
 }
 
 ### View a specific message
-GET http://localhost:3000/messages/2
+GET http://localhost:3000/messages/9
+
+// need empty JSON object if not json parse won't work
